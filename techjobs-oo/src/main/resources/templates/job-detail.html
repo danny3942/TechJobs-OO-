@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+</head>
+<body>
+
+<div th:replace="fragments :: page-header"></div>
+
+<div class="container body-content">
+
+    <!-- // display the job fields, one per row -->
+    <table>
+        <tr>
+            <td th:text="${job.getName()}"></td>
+        </tr>
+        <tr>
+            <td th:text="${job.getEmployer()}"></td>
+        </tr>
+        <tr>
+            <td th:text="${job.getPositionType()}"></td>
+        </tr>
+        <tr>
+            <td th:text="${job.getLocation()}"></td>
+        </tr>
+        <tr>
+            <td th:text="${job.getCoreCompetency()}"></td>
+        </tr>
+    </table>
+
+
+</div>
+
+</body>
+</html>
